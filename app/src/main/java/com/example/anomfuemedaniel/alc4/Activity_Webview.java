@@ -24,8 +24,11 @@ public class Activity_Webview extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.toolbar_webview);
         setSupportActionBar(toolbar);
+        ActionBar actionBar = getSupportActionBar();
 
-
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
 
         alcWebView = findViewById(R.id.webview_alc);
 
