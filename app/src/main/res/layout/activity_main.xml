@@ -8,11 +8,10 @@
     tools:context=".MainActivity">
 
 
-    <include layout="@layout/toolbar_profile"
+    <include layout="@layout/toolbar_home"
 
 
-
-                                />
+        />
 
 
     <Button

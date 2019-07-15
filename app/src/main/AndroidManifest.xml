@@ -21,11 +21,12 @@
 
         <activity
             android:name=".Activity_Webview"
-            android:label="@string/about_alc"
+            android:label="About ALC"
             android:parentActivityName=".MainActivity" />
 
         <activity
             android:name=".MainActivity"
+            android:label="ALC 4 Phase 1"
             android:parentActivityName=".MainActivity">
 
             <intent-filter>

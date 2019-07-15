@@ -13,8 +13,8 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/circleImageView"
-        android:layout_width="237dp"
-        android:layout_height="223dp"
+        android:layout_width="201dp"
+        android:layout_height="190dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="84dp"
         android:layout_marginEnd="16dp"
@@ -28,14 +28,16 @@
         android:layout_width="0dp"
         android:layout_height="37dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/text_field"
         android:text="@string/name_daniel_anomfueme"
         android:textAlignment="center"
         android:textColor="@color/textColour"
         android:textSize="18sp"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
 
@@ -51,6 +53,7 @@
         android:textAlignment="center"
         android:textColor="@color/textColour"
         android:textSize="18sp"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -61,6 +64,7 @@
         android:layout_height="37dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
+        android:gravity="center"
         android:layout_marginEnd="16dp"
         android:background="@drawable/text_field"
         android:text="@string/country_nigeria"
@@ -75,6 +79,7 @@
         android:id="@+id/textView5"
         android:layout_width="0dp"
         android:layout_height="37dp"
+        android:gravity="center"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
@@ -91,7 +96,6 @@
         android:id="@+id/textView6"
         android:layout_width="0dp"
         android:layout_height="37dp"
-
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
@@ -100,6 +104,7 @@
         android:textAlignment="center"
         android:textColor="@color/textColour"
         android:textSize="18sp"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -111,6 +116,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
+        android:gravity="center"
         android:background="@drawable/text_field"
         android:text="@string/slack_username_danielanomfueme"
         android:textAlignment="center"

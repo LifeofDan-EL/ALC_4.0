@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/toolbar_profile"
+    android:id="@+id/toolbar_webview"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/textField"
     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
     app:navigationIcon="?attr/homeAsUpIndicator">
 
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/about_alc"
+        android:textColor="#ffff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
 </androidx.appcompat.widget.Toolbar>

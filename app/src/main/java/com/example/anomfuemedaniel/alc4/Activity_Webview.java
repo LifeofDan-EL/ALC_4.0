@@ -1,10 +1,12 @@
 package com.example.anomfuemedaniel.alc4;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.net.http.SslError;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.webkit.ClientCertRequest;
 import android.webkit.SslErrorHandler;
 import android.webkit.WebSettings;
@@ -15,16 +17,17 @@ public class Activity_Webview extends AppCompatActivity {
 
     private WebView alcWebView;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity__webview);
 
+        Toolbar toolbar = findViewById(R.id.toolbar_webview);
+        setSupportActionBar(toolbar);
+
+
 
         alcWebView = findViewById(R.id.webview_alc);
-
-
 
         alcWebView.getSettings().setJavaScriptEnabled(true);
         alcWebView.setWebViewClient(new WebViewClient() {
@@ -35,6 +38,7 @@ public class Activity_Webview extends AppCompatActivity {
         });
 
         alcWebView.loadUrl("https://andela.com/alc/");
+
     }
 }
 
