@@ -13,7 +13,8 @@ public class ActivityProfile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        Toolbar toolbar = findViewById(R.id.toolbar_profile);
+
+        Toolbar toolbar = findViewById(R.id.toolbar_webview);
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();
 
@@ -22,12 +23,5 @@ public class ActivityProfile extends AppCompatActivity {
         }
 
 
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // back button pressed
-            }
-        });
+}}
 
-    }
-}

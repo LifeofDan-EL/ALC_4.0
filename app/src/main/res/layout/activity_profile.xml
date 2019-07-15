@@ -9,7 +9,18 @@
     android:label= "@string/my_profile"
     >
 
-    <include layout="@layout/toolbar_profile" />
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_profile"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="@color/textField"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="My Profile" />
+
+
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/circleImageView"
